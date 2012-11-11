@@ -6,8 +6,10 @@ set background=dark
 syntax on
 set autoindent
 set smartindent
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set showmatch
 set guioptions-=T
 set ruler
@@ -18,6 +20,10 @@ set hlsearch
 set pastetoggle=<F9>
 "set list
 "set listchars=tab:>-,trail:-
+
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 
 filetype plugin indent on " load filetype plugins/indent settings
 autocmd FileType python setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
