@@ -1,15 +1,28 @@
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
-	url = git://github.com/Shougo/neocomplcache.git
+  url = git://github.com/Shougo/neocomplcache.git
+  ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+  url = git://github.com/scrooloose/nerdtree.git
+  ignore = dirty
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
-	url = git://github.com/majutsushi/tagbar.git
+  url = git://github.com/majutsushi/tagbar.git
+  ignore = dirty
 [submodule "bundle/jshint"]
 	path = bundle/jshint
-	url = https://github.com/walm/jshint.vim.git
+  url = https://github.com/walm/jshint.vim.git
+  ignore = dirty
 [submodule "bundle/vim-js"]
 	path = bundle/vim-js
-	url = https://github.com/pangloss/vim-javascript.git
+  url = https://github.com/pangloss/vim-javascript.git
+  ignore = dirty
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+  url = https://github.com/scrooloose/syntastic.git
+  ignore = dirty
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+  url = https://github.com/klen/python-mode.git
+  ignore = dirty

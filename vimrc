@@ -131,3 +131,13 @@ set completeopt=menu
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_auto_loc_list=1
+let g:syntastic_disabled_filetypes=['html']
+let g:syntastic_enable_signs=1
+let g:syntastic_check_on_open=1
+let g:syntastic_python_checker="flake8"
+
