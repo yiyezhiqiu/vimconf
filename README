@@ -1,4 +1,14 @@
-Usage:
+Vim Config File
+====
+
++ ** Project URL **
+https://github.com/hszcg/vimconf
+
+## Required Libs
+ctags http://ctags.sourceforge.net/
+pyflake https://pypi.python.org/pypi/pyflakes
+
+## Usage
 
 rm -rf ~/.vim  ~/.vimrc
 
