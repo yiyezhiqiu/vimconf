@@ -1,7 +1,7 @@
 Vim Config File
 ====
 
-+ ** Project URL **
++ **Project URL**
 https://github.com/hszcg/vimconf
 
 ## Required Libs
