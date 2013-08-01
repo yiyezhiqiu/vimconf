@@ -26,7 +26,7 @@ if has("autocmd")
 endif
 
 filetype plugin indent on " load filetype plugins/indent settings
-autocmd FileType python setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=8
 autocmd FileType ruby setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType c setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType cpp setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
@@ -39,16 +39,16 @@ call pathogen#infect()
 nmap <F8> :TagbarToggle<CR>
 
 " NerdTree {
- nmap <F3> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
- 
- let NERDTreeShowBookmarks=1
- let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
- let NERDTreeChDirMode=0
- let NERDTreeQuitOnOpen=1
- let NERDTreeMouseMode=2
- let NERDTreeShowHidden=1
- let NERDTreeKeepTreeInNewTab=1
- let g:nerdtree_tabs_open_on_gui_startup=0
+nmap <F3> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+
+let NERDTreeShowBookmarks=1
+let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
+let NERDTreeChDirMode=0
+let NERDTreeQuitOnOpen=1
+let NERDTreeMouseMode=2
+let NERDTreeShowHidden=1
+let NERDTreeKeepTreeInNewTab=1
+let g:nerdtree_tabs_open_on_gui_startup=0
 " }
 
 " Disable AutoComplPop.
@@ -67,10 +67,10 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
 " Define dictionary.
 let g:neocomplcache_dictionary_filetype_lists = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-    \ }
+      \ 'default' : '',
+      \ 'vimshell' : $HOME.'/.vimshell_hist',
+      \ 'scheme' : $HOME.'/.gosh_completions'
+      \ }
 
 " Define keyword.
 if !exists('g:neocomplcache_keyword_patterns')
