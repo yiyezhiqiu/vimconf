@@ -144,3 +144,9 @@ let g:syntastic_python_checker="pyflakes"
 
 set backspace=2
 set backspace=indent,eol,start
+
+set mouse=a
+map <C-R> :update<CR> :!chmod +x %<CR> :!screen bash -c "%:p;echo [process end];read"<CR>
+map <S-R> :update<CR> :!chmod +x %<CR> :!%:p<CR>
+map <S-M> :update<CR> :make<CR>
+
