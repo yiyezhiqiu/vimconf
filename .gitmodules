@@ -28,3 +28,6 @@
 [submodule "bundle/lightline"]
 	path = bundle/lightline
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule "bundle/vim-coffee"]
+	path = bundle/vim-coffee
+	url = https://github.com/kchmck/vim-coffee-script.git
