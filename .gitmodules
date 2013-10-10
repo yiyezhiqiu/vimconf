@@ -25,9 +25,12 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+  ignore = dirty
 [submodule "bundle/lightline"]
 	path = bundle/lightline
 	url = https://github.com/itchyny/lightline.vim.git
+  ignore = dirty
 [submodule "bundle/vim-coffee"]
 	path = bundle/vim-coffee
 	url = https://github.com/kchmck/vim-coffee-script.git
+  ignore = dirty

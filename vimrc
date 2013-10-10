@@ -149,7 +149,4 @@ set laststatus=2
 let g:lightline = {'colorscheme': 'default', }
 
 set mouse=a
-map <S-R> :update<CR> :!chmod +x %<CR> :!screen bash -c "%:p;echo [process end];read"<CR>
-map <S-R> :update<CR> :!chmod +x %<CR> :!%:p<CR>
-map <S-M> :update<CR> :make<CR>
 
