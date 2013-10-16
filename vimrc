@@ -140,7 +140,7 @@ let g:syntastic_disabled_filetypes=['html']
 let g:syntastic_enable_signs=1
 let g:syntastic_check_on_open=0
 let g:syntastic_check_on_wq=0
-let g:syntastic_python_checker="pyflakes"
+let g:syntastic_python_checkers=["pyflakes"]
 
 set backspace=2
 set backspace=indent,eol,start
