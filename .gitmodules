@@ -34,3 +34,7 @@
 	path = bundle/vim-coffee
 	url = https://github.com/kchmck/vim-coffee-script.git
   ignore = dirty
+[submodule "bundle/vim-autopep8"]
+	path = bundle/vim-autopep8
+	url = https://github.com/tell-k/vim-autopep8.git
+  ignore = dirty

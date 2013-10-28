@@ -150,3 +150,6 @@ let g:lightline = {'colorscheme': 'default', }
 
 set mouse=a
 
+"For Python autopep8"
+autocmd FileType python map <buffer> <F4> :call Autopep8()<CR>
+

@@ -7,7 +7,9 @@ https://github.com/hszcg/vimconf
 ## Required Libs
 ctags http://ctags.sourceforge.net/
 
-pyflake https://pypi.python.org/pypi/pyflakes
+pyflake https://pypi.python.org/pypi/pyflakes/
+
+pep8 https://pypi.python.org/pypi/autopep8/
 
 JSHint http://www.jshint.com/install/
 
