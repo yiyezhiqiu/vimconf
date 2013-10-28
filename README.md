@@ -16,7 +16,7 @@ JSHint http://www.jshint.com/install/
 ## Install Libs
 Run install_libs.sh
 
-## Usage
+## Install Vim Plugins
 
 **NOTE: Please backup your .vimrc file first if needed**
 ```
@@ -27,3 +27,21 @@ cd ~/.vim
 git submodule init
 git submodule update
 ```
+
+## Features
+General autocomplete
+
+General syntax check
+
+Static analysis for Python and Javascript Code
+
+Better highlight and formating for HTML, CSS, LESS and Coffeescript
+
+Status lines
+
+### Shortcuts
+F3 Toggle NerdTree
+
+F4 Run autopep8
+
+F8 Toggle Tagbar
