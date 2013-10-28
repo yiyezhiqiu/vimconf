@@ -13,6 +13,9 @@ pep8 https://pypi.python.org/pypi/autopep8/
 
 JSHint http://www.jshint.com/install/
 
+## Install Libs
+Run install_libs.sh
+
 ## Usage
 
 **NOTE: Please backup your .vimrc file first if needed**
