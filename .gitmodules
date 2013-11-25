@@ -38,3 +38,9 @@
 	path = bundle/vim-autopep8
 	url = https://github.com/tell-k/vim-autopep8.git
   ignore = dirty
+[submodule "bundle/golang"]
+	path = bundle/golang
+	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "bundle/gocode"]
+	path = bundle/gocode
+	url = https://github.com/Blackrush/vim-gocode.git
