@@ -25,7 +25,7 @@ git clone https://github.com/hszcg/vimconf.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
 
 ## Features
@@ -35,13 +35,15 @@ General syntax check
 
 Static analysis for Python and Javascript Code
 
-Better highlight and formating for HTML, CSS, LESS and Coffeescript
+Better highlight and formating for Javascript, HTML, CSS, LESS and Coffeescript
 
 Status lines
 
 ### Shortcuts
 F3 Toggle NerdTree
 
-F4 Run autopep8
+F4 Run autopep8 for Python, OR Auto formating for Javascript/HTML/CSS
+
+F7 Browse recently opened files
 
 F8 Toggle Tagbar

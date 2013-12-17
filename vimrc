@@ -1,3 +1,6 @@
+""""""""""""""""""""""""""""""
+" Global settings 
+""""""""""""""""""""""""""""""
 set nocompatible
 set number
 filetype on
@@ -33,15 +36,59 @@ autocmd FileType c setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType cpp setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType sh setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2 
 
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
+set backspace=2
+set backspace=indent,eol,start
+
+set mouse=a
+
+""""""""""""""""""""""""""""""
+" Load pathogen 
+""""""""""""""""""""""""""""""
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect()
 
+""""""""""""""""""""""""""""""
+" For Python autopep8 
+""""""""""""""""""""""""""""""
+autocmd FileType python map <buffer> <F4> :call Autopep8()<CR>
+
+""""""""""""""""""""""""""""""
+" JS beautifier
+""""""""""""""""""""""""""""""
+" for javascript
+autocmd FileType javascript noremap <buffer>  <F4> :call JsBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <F4> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <F4> :call CSSBeautify()<cr>
+
+
+""""""""""""""""""""""""""""""
+" Tagbar 
+""""""""""""""""""""""""""""""
 nmap <F8> :TagbarToggle<CR>
 
-" NerdTree {
-nmap <F3> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+""""""""""""""""""""""""""""""
+" BufExplorer
+""""""""""""""""""""""""""""""
+nmap <F7> :BufExplorer<CR>
+let g:bufExplorerDefaultHelp=0       " Do not show default help.
+let g:bufExplorerShowRelativePath=1  " Show relative paths.
+let g:bufExplorerSortBy='mru'        " Sort by most recently used.
+let g:bufExplorerSplitRight=0        " Split left.
+let g:bufExplorerSplitVertical=1     " Split vertically.
+let g:bufExplorerSplitVertSize = 30  " Split width
+let g:bufExplorerUseCurrentWindow=1  " Open in new window.
 
+""""""""""""""""""""""""""""""
+" NerdTree 
+""""""""""""""""""""""""""""""
+nmap <F3> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
 let NERDTreeChDirMode=0
@@ -50,8 +97,10 @@ let NERDTreeMouseMode=2
 let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
-" }
 
+""""""""""""""""""""""""""""""
+" neocomplete 
+""""""""""""""""""""""""""""""
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
@@ -129,13 +178,19 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
 set completeopt=menu
 
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
-
+""""""""""""""""""""""""""""""
+" Statusline
+""""""""""""""""""""""""""""""
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+set laststatus=2
+let g:lightline = {'colorscheme': 'default', }
+
+""""""""""""""""""""""""""""""
+" Syntastic
+""""""""""""""""""""""""""""""
 let g:syntastic_auto_loc_list=1
 let g:syntastic_disabled_filetypes=['html']
 let g:syntastic_enable_signs=1
@@ -143,21 +198,11 @@ let g:syntastic_check_on_open=0
 let g:syntastic_check_on_wq=0
 let g:syntastic_python_checkers=["pyflakes"]
 
-set backspace=2
-set backspace=indent,eol,start
-
-set laststatus=2
-let g:lightline = {'colorscheme': 'default', }
-
-set mouse=a
-
-"For Python autopep8"
-autocmd FileType python map <buffer> <F4> :call Autopep8()<CR>
-
-"For Golang"
+""""""""""""""""""""""""""""""
+" For Golang
+""""""""""""""""""""""""""""""
 filetype off
 filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
-

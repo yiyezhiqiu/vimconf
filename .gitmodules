@@ -1,22 +1,18 @@
 [submodule "bundle/neocomplcache"]
 	path = bundle/neocomplcache
-  url = git://github.com/Shougo/neocomplcache.git
+  url = https://github.com/Shougo/neocomplcache.git
   ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-  url = git://github.com/scrooloose/nerdtree.git
+  url = https://github.com/scrooloose/nerdtree.git
   ignore = dirty
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
-  url = git://github.com/majutsushi/tagbar.git
+  url = https://github.com/majutsushi/tagbar.git
   ignore = dirty
 [submodule "bundle/jshint"]
 	path = bundle/jshint
   url = https://github.com/walm/jshint.vim.git
-  ignore = dirty
-[submodule "bundle/vim-js"]
-	path = bundle/vim-js
-  url = https://github.com/pangloss/vim-javascript.git
   ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
@@ -41,6 +37,16 @@
 [submodule "bundle/golang"]
 	path = bundle/golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+  ignore = dirty
 [submodule "bundle/gocode"]
 	path = bundle/gocode
 	url = https://github.com/Blackrush/vim-gocode.git
+  ignore = dirty
+[submodule "bundle/bufexplorer-vim"]
+	path = bundle/bufexplorer-vim
+	url = https://github.com/vim-scripts/bufexplorer.zip.git
+  ignore = dirty
+[submodule "bundle/jsbeautify-vim"]
+	path = bundle/jsbeautify-vim
+	url = https://github.com/maksimr/vim-jsbeautify
+  ignore = dirty
