@@ -54,3 +54,7 @@
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
   ignore = dirty
+[submodule "bundle/vim-jinja"]
+	path = bundle/vim-jinja
+	url = https://github.com/mitsuhiko/vim-jinja.git
+  ignore = dirty
