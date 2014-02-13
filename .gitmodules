@@ -1,7 +1,3 @@
-[submodule "bundle/neocomplcache"]
-	path = bundle/neocomplcache
-  url = https://github.com/Shougo/neocomplcache.git
-  ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
   url = https://github.com/scrooloose/nerdtree.git
@@ -57,4 +53,8 @@
 [submodule "bundle/vim-jinja"]
 	path = bundle/vim-jinja
 	url = https://github.com/mitsuhiko/vim-jinja.git
+  ignore = dirty
+[submodule "bundle/neocomplete"]
+	path = bundle/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim.git
   ignore = dirty
