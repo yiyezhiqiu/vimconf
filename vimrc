@@ -60,32 +60,12 @@ autocmd FileType python map <buffer> <F4> :call Autopep8()<CR>
 """"""""""""""""""""""""""""""
 " JS beautifier
 """"""""""""""""""""""""""""""
-function! JSFormat()
-  " Preparation: save last search, and cursor position.
-  let l:win_view = winsaveview()
-  let l:last_search = getreg('/')
-
-  " call esformatter with the contents form and cleanup the extra newline
-  execute ":%!~/.vim/bin/js-format.sh"
-  if v:shell_error
-      echoerr 'format script failed'
-      undo
-      return 0
-  endif
-  " Clean up: restore previous search history, and cursor position
-  call winrestview(l:win_view)
-  call setreg('/', l:last_search)
-endfunction
-
 " for javascript
 autocmd FileType javascript noremap <buffer>  <F4> :call JsBeautify()<cr>
-autocmd FileType javascript nnoremap <silent> <leader>e :call JSFormat()<cr>
 " for html
 autocmd FileType html noremap <buffer> <F4> :call HtmlBeautify()<cr>
-autocmd FileType html nnoremap <silent> <leader>e :call JSFormat()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <F4> :call CSSBeautify()<cr>
-autocmd FileType css nnoremap <silent> <leader>e :call JSFormat()<cr>
 
 
 """"""""""""""""""""""""""""""
