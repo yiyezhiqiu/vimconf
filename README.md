@@ -7,7 +7,7 @@ https://github.com/hszcg/vimconf
 ## Required Libs
 ctags http://ctags.sourceforge.net/
 
-pyflake https://pypi.python.org/pypi/pyflakes/
+pyflakes https://pypi.python.org/pypi/pyflakes/
 
 pep8 https://pypi.python.org/pypi/autopep8/
 
