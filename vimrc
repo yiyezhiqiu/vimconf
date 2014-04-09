@@ -202,3 +202,9 @@ filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
+
+""""""""""""""""""""""""""""""
+" For Scala
+""""""""""""""""""""""""""""""
+let g:scala_sort_across_groups=1
+
