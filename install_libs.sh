@@ -16,4 +16,7 @@ pip install --upgrade autopep8
 # apt-get update
 # apt-get install nodejs
 
-npm install -g jshint
+npm install jshint -g
+npm install js-beautify -g
+
+npm install coffeelint -g
