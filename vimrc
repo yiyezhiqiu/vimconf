@@ -31,6 +31,7 @@ endif
 filetype plugin indent on " load filetype plugins/indent settings
 autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
 autocmd FileType go setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
+autocmd FileType javascript setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
 autocmd FileType ruby setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType c setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType cpp setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
