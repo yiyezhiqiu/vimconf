@@ -28,6 +28,12 @@ git submodule init
 git submodule update --init --recursive
 ```
 
+## Install vim-go dependencies
+Open vim and type below
+```
+:GoInstallBinaries
+```
+
 ## Install a new plugin
 
 ```

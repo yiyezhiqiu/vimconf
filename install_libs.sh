@@ -9,6 +9,7 @@ pip install --upgrade autopep8
 
 # For MacOS
 # brew install node
+# brew install go
 
 # For Ubuntu
 # apt-get install python-software-properties
